@@ -10,9 +10,7 @@ export class ListContainerComponent extends React.Component {
             <p>My To-Do List</p>
         </header>
         <div className="App-header-divider"></div>
-        <body>
           <ListItemComponent></ListItemComponent>
-        </body>
       </div>);
     }
 }

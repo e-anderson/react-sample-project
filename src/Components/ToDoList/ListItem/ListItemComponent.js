@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ListItemComponent.scss';
 
 export class ListItemComponent extends React.Component {
