@@ -1,28 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
-
-class ListContainer extends Component {
-  render() {
-    return (
-      <div className="Container-style">
-      <ul>
-        <li>git gud</li>
-        <li>git gud at this</li>
-      </ul>
-      </div>
-    )
-  }
-}
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-            My To-Do List
+        <img src={require('./logo.svg')} alt="" className="Logo"/>
+            <p>My To-Do List</p>
         </header>
+        <div className="App-header-divider"></div>
         <body>
-        <ListContainer></ListContainer>
+
         </body>
       </div>
     );

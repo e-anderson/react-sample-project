@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  width: 100%;
+  padding-top: 2vmin;
+  color: white;
+  background-color: dimgray;
+  display: flex;
+  justify-content: center;
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
+  
+  p {
+    font-weight: 500;
+    font-size: 3vmin;
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+
+}
+
+.App-header-divider {
+  background-color: whitesmoke;
+  height: 2px;
+}
+
+.Logo {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  margin-right: 1vmin;
+}
