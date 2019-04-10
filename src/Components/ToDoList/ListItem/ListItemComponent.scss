@@ -9,10 +9,16 @@
 .ListItemContainer {
   display: flex;
   padding: 10px;
+  margin: 5px auto auto 5px;
   font-size: 2.5vmin;
+  border: 2px whitesmoke dotted;
 }
 
 .TaskHeading{
-  font-weight: 700;
+  font-weight: 600;
   margin-right: 1vmin;
+}
+
+.TaskDescription {
+  font-weight: 400;
 }

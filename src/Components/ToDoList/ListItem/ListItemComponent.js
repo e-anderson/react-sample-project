@@ -12,7 +12,7 @@ export class ListItemComponent extends React.Component {
       let obj = (
         <div className="ListItemContainer">
               <ListItemToggle checked={this.state.item.completed}/>
-              <span className="TaskHeading">Task:</span> {this.state.item.description}
+              <span className="TaskHeading">Task:</span> <span className="TaskDescription">{this.state.item.description}</span>
         </div>
       );
         return obj;

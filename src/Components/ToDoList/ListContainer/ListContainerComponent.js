@@ -5,13 +5,18 @@ import { ListItemData } from '../ListItemData';
 
 export class ListContainerComponent extends React.Component {
     render() {
-        return (<div className="App">
-        <header className="App-header">
-          <img src={this.props.logo} alt="" className="Logo"/>
-              <p>My To-Do List</p>
-        </header>
-        <div className="App-header-divider"></div>
-          <ListItemComponent item={new ListItemData(0, 'Pet Dogs', true)}></ListItemComponent>
-      </div>);
+      const items = [
+        new ListItemData(0, 'Make spaghetti for dinner', false),
+        new ListItemData(0, 'Pet Dogs', true),
+        new ListItemData(0, 'Take a shower', true)
+      ];
+
+      const displayItems = items.map((item) =>
+        <ListItemComponent item={item} />
+      );
+        return ( <div className="ListContainer">
+        {displayItems}
+        </div>
+        );
     }
 }

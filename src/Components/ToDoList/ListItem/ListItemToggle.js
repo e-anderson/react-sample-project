@@ -9,7 +9,7 @@ export class ListItemToggle extends React.Component {
   }
 
   toggleChecked() {
-    this.setState = { checked: !this.state.checked };
+    this.setState({ checked: !this.state.checked });
   }
 
   handleClick() {
@@ -18,7 +18,7 @@ export class ListItemToggle extends React.Component {
 
   render() {
     let obj = (
-      <div className="Box"><img src={this.state.checked ? require('./box_checked.png') : require('./box_unchecked.png')}/></div>
+      <div className="Box" onClick={this.handleClick}><img src={this.state.checked ? require('./box_checked.png') : require('./box_unchecked.png')}/></div>
     );
       return obj;
   }
