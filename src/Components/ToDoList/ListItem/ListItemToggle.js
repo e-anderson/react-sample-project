@@ -10,6 +10,7 @@ export class ListItemToggle extends React.Component {
 
   toggleChecked() {
     this.setState({ checked: !this.state.checked });
+    this.props.updateItemCallback(this.state.checked);
   }
 
   handleClick() {

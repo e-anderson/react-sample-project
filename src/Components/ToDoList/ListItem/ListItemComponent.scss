@@ -22,3 +22,11 @@
 .TaskDescription {
   font-weight: 400;
 }
+
+.Unfinished-Task {
+  text-decoration: none;
+}
+
+.Finished-Task {
+  text-decoration: line-through;
+}
