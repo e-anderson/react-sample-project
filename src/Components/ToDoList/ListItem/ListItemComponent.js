@@ -1,12 +1,20 @@
 import React from 'react';
 import './ListItemComponent.scss';
+import { ListItemData } from '../ListItemData';
+import {ListItemToggle} from './ListItemToggle'
 
 export class ListItemComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { item: { id:0, description:'Pet dogs', completed:false}};
+    this.state = { item: this.props.item};
   }
     render() {
-        return <p>Task: {this.state.item.description}, {this.state.item.completed ? 'Done!' : 'Not Done'}</p>
+      let obj = (
+        <div className="ListItemContainer">
+              <ListItemToggle checked={this.state.item.completed}/>
+              <span className="TaskHeading">Task:</span> {this.state.item.description}
+        </div>
+      );
+        return obj;
     }
 }
