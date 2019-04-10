@@ -12,8 +12,10 @@ export class ListItemComponent extends React.Component {
 
   updateItemCompletedStatus = (toggle) => {
     this.state.item.completed = !toggle;
-    var str =  this.state.item.description + " is now " + this.state.item.completed;
-    console.log(str);
+  }
+
+  deleteItem =() => {
+    this.props.onDeleteButtonClicked(this.state.item);
   }
 
     render() {
@@ -21,6 +23,7 @@ export class ListItemComponent extends React.Component {
         <div className="ListItemContainer">
               <ListItemToggle checked={this.state.item.completed} updateItemCallback={this.updateItemCompletedStatus}/>
               <span className="TaskHeading">Task:</span> <span className='TaskDescription'>{this.state.item.description}</span>
+              <span><img src={require('./delete-icon.png')} className="DeleteButton" onClick={this.deleteItem}/></span>
         </div>
       );
         return obj;

@@ -4,6 +4,7 @@
   height: 26px;
   border-radius: 6px;
   margin-right: 5px;
+  float: left;
 }
 
 .ListItemContainer {
@@ -12,6 +13,7 @@
   margin: 5px auto auto 5px;
   font-size: 2.5vmin;
   border: 2px whitesmoke dotted;
+  background-color: rgb(151, 151, 151);
 }
 
 .TaskHeading{
@@ -21,12 +23,12 @@
 
 .TaskDescription {
   font-weight: 400;
+  width: 100%;
+  text-align: left
 }
 
-.Unfinished-Task {
-  text-decoration: none;
-}
-
-.Finished-Task {
-  text-decoration: line-through;
+.DeleteButton {
+  width: 26px;
+  height: 26px;
+  float: right;
 }

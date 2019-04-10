@@ -12,6 +12,7 @@ export class AddNewItemComponent extends React.Component {
   handleClick() {
     this.props.addItemCallback(new ListItemData(1, this.state.inputvalue, false));
     this.refs.inputField.value = "";
+    this.setState({inputvalue: ""});
   }
 
   updateInputValue = (evt) => {
